@@ -13,6 +13,18 @@ class AppTest {
     Player Federer = new Player("Federer");
 
     @Test
+    void start_with_0_points() {
+        assertEquals(0, Nadal.getScore());
+
+    }
+
+    @Test
+    void start_with_0_sets() {
+        assertEquals(0, Nadal.getSets());
+
+    }
+
+    @Test
     void player_point_15() {
         assertEquals("Punto para Nadal, suma 15", game.punto(Nadal));
     }
@@ -32,6 +44,14 @@ class AppTest {
 
     @Test
     void player_win_juego() {
+        game.punto(Nadal);
+        game.punto(Nadal);
+        game.punto(Nadal);
+        assertEquals("Juego para Nadal", game.punto(Nadal));
+    }
+
+    @Test
+    void player_win_set() {
         game.punto(Nadal);
         game.punto(Nadal);
         game.punto(Nadal);

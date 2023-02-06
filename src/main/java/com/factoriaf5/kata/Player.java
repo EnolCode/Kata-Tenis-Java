@@ -3,7 +3,7 @@ package com.factoriaf5.kata;
 public class Player{
 
     private int score = 0;
-    private int set = 0;
+    private int sets = 0;
     private String name;
 
     public String getName() {
@@ -12,11 +12,11 @@ public class Player{
     public void setName(String name) {
         this.name = name;
     }
-    public int getSet() {
-        return set;
+    public int getSets() {
+        return sets;
     }
-    public void setSet(int set) {
-        this.set = set;
+    public void setSets(int set) {
+        this.sets = set;
     }
     public int getScore() {
         return score;
