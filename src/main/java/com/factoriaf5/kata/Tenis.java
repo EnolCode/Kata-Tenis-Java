@@ -30,16 +30,15 @@ public class Tenis {
     }
 
     public String punto(Player player) {
-        if(player.getScore() <= 40){
+        if(player.getScore() < 40){
         player.setScore(player.getScore()+1);
         if(player.getScore() == 1)  return "Punto para " + player.getName() + ", suma 15";
         if(player.getScore() == 2)  return "Punto para " + player.getName() + ", suma 30";
         if(player.getScore() == 3)  return "Punto para " + player.getName() + ", suma 40";
-        }else{
-            player.setSets(player.getSets()+1);
-            player.setScore(0);
-            return "Juego para " + player.getName();
         }
+        player.setSets(player.getSets()+1);
+        player.setScore(0);
+
         return "Juego para " + player.getName();
 
     }

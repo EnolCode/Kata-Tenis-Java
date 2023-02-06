@@ -55,6 +55,7 @@ class AppTest {
         game.punto(Nadal);
         game.punto(Nadal);
         game.punto(Nadal);
-        assertEquals("Juego para Nadal", game.punto(Nadal));
+        game.punto(Nadal);
+        assertEquals(1, Nadal.getSets());
     }
 }
