@@ -15,8 +15,8 @@ public class Player{
     public int getSets() {
         return sets;
     }
-    public void setSets(int set) {
-        this.sets = set;
+    public void setSets(int sets) {
+        this.sets = sets;
     }
     public int getScore() {
         return score;

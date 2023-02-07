@@ -25,10 +25,6 @@ public class Tenis {
         this.player2 = player2;
     }
 
-    public void setFederer(Player federer) {
-        player2 = federer;
-    }
-
     public String punto(Player player) {
         if(player.getScore() < 40){
         player.setScore(player.getScore()+1);
