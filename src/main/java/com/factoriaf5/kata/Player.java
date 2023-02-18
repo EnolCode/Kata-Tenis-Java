@@ -5,6 +5,7 @@ public class Player{
     private int score = 0;
     private int sets = 0;
     private String name;
+    private String names;
 
     public String getName() {
         return name;
